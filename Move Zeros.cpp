@@ -17,9 +17,7 @@ public:
                         if ( nums[i] == 0) {
                             count++;
                             if (nums.size()==1) {
-                                for (int j = 0; j < n-1; j++) {
-                                    nums.push_back(0);
-                                }
+                                nums.insert(nums.end(),n-1,0);
                                 return;
                             } else nums.erase(nums.begin()+i);
                             
@@ -27,8 +25,7 @@ public:
                     }
                     
                     
-                    for (int j = 0; j < count; j++) {
-                        nums.push_back(0);
+                  nums.insert(nums.end(),count,0);
                     }
                     return;
                 }
