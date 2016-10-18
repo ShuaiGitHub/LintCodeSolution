@@ -23,8 +23,9 @@ public class Solution {
      * @param head: The first node of linked list.
      * @return: a tree node
      */
+     public static TreeNode root;
     public TreeNode sortedListToBST(ListNode head) {
         // write your code here
-
+        ro
     }
 }
